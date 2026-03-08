@@ -18,8 +18,11 @@ class TaskModuleInstaller implements ModuleInstaller {
   @override
   ModuleMetadata get metadata => const ModuleMetadata(
     id: 'mindperch-task',
+    displayNameKey: 'tasksTitle',
+    descriptionKey: 'tasksDescription',
     displayName: 'Tasks',
     description: 'Low-friction ADHD task capture',
+    iconData: Icons.task_alt,
   );
 
   @override
